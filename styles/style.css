@@ -1,16 +1,90 @@
+body{
+  background: #999999;
+}
+
+.relativeElement{
+  background: red;
+  color:white;
+  position:relative;
+  top:-20px;
+  left:-20px;
+}
 
 div{
-  height: 250 px;
+  position: relative;
 }
 
-.blue{
-  background:  blue;
+.absoluteElement{
+  background: blue;
+  color: white;
+  position:absolute;
+  top:20px;
+  left:20px;
 }
 
-.red{
-  background: red;
+.fixedElement{
+  position:fixed;
+  width: 20px;
+  height: 20px;
+
 }
 
-.white{
-  background: white;
+.el1{
+  top:50px;
+  left:50px;
+  background: #FF0000;
+  z-index:2;
+}
+
+.el2{
+  top:60px;
+  left:60px;
+  background: #FF0000;
+  z-index:3;
+}
+
+.el3{
+  top:70px;
+  left:70px;
+  background: #FF0000;
+  z-index:10000000
+}
+
+.el4{
+  top:100px;
+  left:30px;
+  width: 200px;
+  height: 100px;
+  background: rgba(250,250,250,0.75);
+}
+
+#images img{
+  top:80px;
+  left:80px;
+  width: 200px;
+  height: 200px;
+
+}
+
+
+
+
+.pic div{
+  position:absolute;
+  bottom:-200;
+  left:0;
+  width: 100%;
+  background: rgba(255,255,255,0.75);
+  transition: all 0.2s ease-in;
+}
+
+.pic:hover div{
+  bottom:0;
+}
+
+.pic{
+  top: 80px;
+  left:80px;
+  width: 150px;
+  height: 150px;
 }
